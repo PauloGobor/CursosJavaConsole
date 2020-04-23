@@ -22,7 +22,7 @@ public class ListarUsuario {
 		System.out.println("###########################################################\n");
 
 		System.out.print("#Nome # Idade # Email\n");
-		System.out.print("###########################################################\n");
+		System.out.print("########################################################### \n");
 		for (Usuario usuario : usuarios) {
 			System.out.print(usuario.getNome() + " # ");
 			System.out.print(usuario.getIdade() + " # ");
