@@ -1,9 +1,6 @@
 # CursosJavaConsole
 App Java Console + JPA + Hibernate
 
-Aluno: Paulo Eduardo Gobor
-
-
 User functionality
 Register user (Register a user)
 Change user (changes the registered user data)
