@@ -29,7 +29,7 @@ public class ListarUsuario {
 			System.out.print(usuario.getEmail() + " # ");
 
 		}
-		System.out.print("###########################################################\n");
+		System.out.print("########################################################### \n");
 		Console.readString("Pressione qualquer botao para voltar");
 
 	}
