@@ -26,10 +26,10 @@ public class ListarUsuario {
 		for (Usuario usuario : usuarios) {
 			System.out.print(usuario.getNome() + " # ");
 			System.out.print(usuario.getIdade() + " # ");
-			System.out.print(usuario.getEmail() + " # ");
+			System.out.println(usuario.getEmail() + " # ");
 
 		}
-		System.out.print("########################################################### \n");
+		System.out.print("########################################################### \n\n");
 		Console.readString("Pressione qualquer botao para voltar");
 
 	}

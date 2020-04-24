@@ -7,14 +7,11 @@ import Model.Professor;
 
 public class ProfessorController {
 
-	private Professor professor;
-	ProfessorDAO professorDAO = new ProfessorDAO();
+	private static Professor professor = new Professor();
+	private static ProfessorDAO professorDAO = new ProfessorDAO();
 
 	public void salvar(Professor professor) {
-		professorDAO = new ProfessorDAO();
 		professorDAO.salvar(professor);
-		professor = new Professor();
-		// return "sucesso";
 	}
 
 	public List<Professor> listarProfessor() {
@@ -22,7 +19,6 @@ public class ProfessorController {
 	}
 
 	public Professor BuscarProfessorPorId(Long cod) {
-		professorDAO = new ProfessorDAO();
 		professor = professorDAO.buscarPorId(cod);
 		return professor;
 	}

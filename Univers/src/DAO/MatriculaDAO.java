@@ -3,9 +3,7 @@ package DAO;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-
 import Interfaces.IDAO;
-import Interfaces.MatriculaInterface;
 import Model.Matricula;
 
 public class MatriculaDAO extends GenericDAO implements IDAO<Matricula> {

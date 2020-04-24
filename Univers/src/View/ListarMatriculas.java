@@ -17,7 +17,7 @@ public class ListarMatriculas {
 		System.out.println("###########################################################");
 		System.out.println("#################     LISTAR MATRÍCULA     ################");
 		System.out.println("###########################################################");
-		System.out.println("###########################################################");
+		System.out.println("###########################################################\n");
 
 		List<Matricula> matriculas = mtctr.listarMatriculas();
 

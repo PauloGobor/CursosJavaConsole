@@ -49,8 +49,7 @@ public class RealizarMatricula {
 						System.out.println("");
 						if (conf == 1) {
 							matricula.setStatus(statusMatricula);
-							mtrct.setMatricula(matricula);
-							mtrct.salvar();
+							mtrct.salvar(matricula);
 							System.out.println("A matricula do Aluno:" + usuario.getNome() + ", no Curso:"
 									+ curso.getNome() + " foi realizada com Sucesso");
 							Console.readString("Pressione qualquer botão para continuar...");

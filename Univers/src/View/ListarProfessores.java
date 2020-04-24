@@ -18,7 +18,7 @@ public class ListarProfessores {
 		System.out.println("###########################################################");
 		System.out.println("###############      LISTAR PROFESSORES    ################");
 		System.out.println("###########################################################");
-		System.out.println("###########################################################");
+		System.out.println("###########################################################\n");
 
 
 		System.out.print("#Nome # Idade # Email\n");
@@ -26,9 +26,9 @@ public class ListarProfessores {
 		for (Professor professor : professores) {
 			System.out.print(professor.getNome() + " # ");
 			System.out.print(professor.getIdade() + " # ");
-			System.out.print(professor.getEmail() + " # ");
+			System.out.println(professor.getEmail() + " # ");
 		}
-		System.out.print("###########################################################\n");
+		System.out.print("###########################################################\n\n");
 		Console.readString("Pressione qualquer botao para voltar");
 	}
 

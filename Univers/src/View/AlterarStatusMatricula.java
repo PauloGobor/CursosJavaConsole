@@ -70,8 +70,7 @@ public class AlterarStatusMatricula {
 							}
 							if (newStatus != null) {
 								matricula.setStatus(newStatus);
-								mtrct.setMatricula(matricula);
-								mtrct.salvar();
+								mtrct.salvar(matricula);
 								System.out.println("A matricula do Aluno: " + usuario.getNome().toUpperCase()
 										+ ", no Curso: " + curso.getNome() + " foi mudada do status:" + oldStatus
 										+ " para :" + matricula.getStatus());

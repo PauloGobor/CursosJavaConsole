@@ -6,26 +6,11 @@ import Model.Matricula;
 
 public class MatriculaController {
 
-	private Matricula matricula;
-	MatriculaDAO matriculaDAO = new MatriculaDAO();
+	private static Matricula matricula = new Matricula();
+	private static MatriculaDAO matriculaDAO = new MatriculaDAO();
 
-	public MatriculaController() {
-		matricula = new Matricula();
-	}
-
-	public Matricula getMatricula() {
-		return matricula;
-	}
-
-	public void setMatricula(Matricula matricula) {
-		this.matricula = matricula;
-	}
-
-	public void salvar() {
-		MatriculaDAO matriculaDAO = new MatriculaDAO();
+	public void salvar(Matricula matricula) {
 		matriculaDAO.salvar(matricula);
-		matricula = new Matricula();
-		// return "sucesso";
 	}
 
 	public List<Matricula> listarMatriculas() {

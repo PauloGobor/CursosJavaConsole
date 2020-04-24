@@ -32,8 +32,7 @@ public class AlterarUsuario {
 			newuser.setIdade(Console.readInt("Idade: "));
 			newuser.setSexo(Console.readString("Sexo: "));
 
-			usrct.setUsuario(newuser);
-			usrct.salvar();
+			usrct.salvar(newuser);
 			
 			System.out.println("Usuario " + newuser.getNome() + " alterado com Sucesso!!!");
 			Console.readString("Pressione qualquer botão para continuar...");

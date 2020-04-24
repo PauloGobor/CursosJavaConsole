@@ -40,8 +40,7 @@ public class AlterarCurso {
 				newcrs.setQtdVagas(Console.readInt("Quantidade de vagas: "));
 				newcrs.setProfessor(professor);
 
-				crsct.setCurso(newcrs);
-				crsct.salvar();
+				crsct.salvar(newcrs);
 				System.out.println("Curso" + newcrs.getNome() + " Alterado com Sucesso!");
 				Console.readString("Pressione qualquer botão para continuar...");
 			} else {

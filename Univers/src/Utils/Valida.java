@@ -75,8 +75,7 @@ public class Valida {
 	    	if (curso.getQtdVagas() >=1)
             {
                 curso.setQtdVagas(curso.getQtdVagas() - 1); 
-                crsct.setCurso(curso);
-                crsct.salvar();
+                crsct.salvar(curso);
                 return true;
             }
             else

@@ -36,8 +36,7 @@ public class CadastrarCurso {
 				curso.setQtdVagas(Console.readInt("Quantidade de vagas: "));
 				curso.setProfessor(professor);
 
-				crsct.setCurso(curso);
-				crsct.salvar();
+				crsct.salvar(curso);
 				System.out.println("Curso " + curso.getNome() + " Cadastrado com Sucesso!!!");
 				Console.readString("Pressione qualquer botão para continuar...");
 			} else {
