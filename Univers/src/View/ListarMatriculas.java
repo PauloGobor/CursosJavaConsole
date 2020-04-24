@@ -30,7 +30,7 @@ public class ListarMatriculas {
 			System.out.println(matricula.getStatus());
 
 		}
-		System.out.print("###########################################################\n");
+		System.out.print("###########################################################\n\n");
 
 		Console.readString("\nPressione qualquer tecla ");
 	}

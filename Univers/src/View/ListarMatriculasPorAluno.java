@@ -55,7 +55,7 @@ public class ListarMatriculasPorAluno {
 					System.out.print(matricula.getUsuario().getNome() + " #  ");
 					System.out.println(matricula.getStatus());
 				}
-				System.out.print("###########################################################\n");
+				System.out.print("###########################################################\n\n");
 				Console.readString("\nPressione qualquer botao para continuar...");
 			} else {
 				System.out.println("Opção de Status Invalida");

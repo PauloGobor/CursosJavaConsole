@@ -21,7 +21,7 @@ public class ListarCurso {
 		System.out.println("###########################################################\n");
 
 		System.out.print("Nome # Prof. # Horas # Vagas # Valor # \n");
-		System.out.print("###########################################################\n");
+		System.out.print("###########################################################\n\n");
 		for (Curso curso : cursos) {
 			// System.out.print(curso.getNome().charAt(1 - 2) + "\n");
 			System.out.print(curso.getNome() + "   ");
