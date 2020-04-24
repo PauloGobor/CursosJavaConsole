@@ -4,12 +4,9 @@ package Controller;
 import java.util.List;
 import DAO.UsuarioDAO;
 import Model.Usuario;
- 
-
 
 public class UsuarioController {
-	
-	
+
 	private Usuario usuario;
 	UsuarioDAO usuarioDAO = new UsuarioDAO();
 
@@ -24,14 +21,14 @@ public class UsuarioController {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-	
+
 	public void salvar() {
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
 		usuarioDAO.salvar(usuario);
 		usuario = new Usuario();
-		//return "sucesso";
+		// return "sucesso";
 	}
-	
+
 //	public String autenticar() {
 //		String retorno = "erro";
 //		UsuarioDAO usuarioDAO = new UsuarioDAO();
@@ -40,37 +37,32 @@ public class UsuarioController {
 //		usuario = new Usuario();
 //		return retorno;
 //	}
-	
+
 	public String alterar(Long cod) {
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
 		usuario = usuarioDAO.alterar(cod);
 		return "sucesso";
 	}
-	
-	public List<Usuario> listarUsuario()	{		
-		return usuarioDAO.listarUsuario();
+
+	public List<Usuario> listarUsuario() {
+		return usuarioDAO.listar();
 	}
-	
-	public String excluir(Long cod)	{
+
+	public String excluir(Long cod) {
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
 		usuarioDAO.excluir(cod);
 		usuario = new Usuario();
 		return "sucesso";
 	}
-	
+
 	public Usuario BuscarUsarioPorId(Long cod) {
 		UsuarioDAO usuarioDAO = new UsuarioDAO();
-		usuario = usuarioDAO.buscarUsuarioPorId(cod);
+		usuario = usuarioDAO.buscarPorId(cod);
 		return usuario;
 	}
-	
-	public Usuario BuscarUsarioPorCpf(String cpf) {
-		return usuarioDAO.buscarUsuarioPorCpf(cpf);
-	}
-	
-	
-	
-	
 
+	public Usuario BuscarUsarioPorCpf(String cpf) {
+		return usuarioDAO.buscarPorCpf(cpf);
+	}
 
 }

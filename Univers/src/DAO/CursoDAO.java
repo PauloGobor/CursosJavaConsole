@@ -1,14 +1,12 @@
 package DAO;
 
 import java.util.List;
-
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import Interfaces.CursoInterface;
+import Interfaces.IDAO;
 import Model.Curso;
 
-
-public class CursoDAO extends GenericDAO implements CursoInterface {
+public class CursoDAO extends GenericDAO implements IDAO<Curso> {
 	Curso curso = new Curso();
 
 	@Override
@@ -33,7 +31,7 @@ public class CursoDAO extends GenericDAO implements CursoInterface {
 	}
 
 	@Override
-	public List<Curso> listarCursos() {
+	public List<Curso> listar() {
 		EntityManager em = getEntityManager();
 		Query q;
 		q = em.createQuery("SELECT object(curso) FROM Curso as curso");
@@ -44,7 +42,7 @@ public class CursoDAO extends GenericDAO implements CursoInterface {
 	@Override
 	public Curso alterar(Long cod) {
 		if (cod != null) {
-			curso = buscarCursoPorId(cod);
+			curso = buscarPorId(cod);
 		}
 		return curso;
 	}
@@ -65,33 +63,35 @@ public class CursoDAO extends GenericDAO implements CursoInterface {
 	}
 
 	@Override
-	public Curso buscarCursoPorId(Long cod) {
+	public Curso buscarPorId(Long cod) {
 		if (cod != null) {
 			curso = getEntityManager().find(Curso.class, cod);
 		}
 		return curso;
 	}
-	
+
 	@SuppressWarnings("finally")
 	@Override
-	public Curso buscarCursoPorNome(String nome) {
+	public Curso buscarPorNome(String nome) {
 		EntityManager em = getEntityManager();
 		try {
-		Query q = em.createQuery("SELECT object(curso)" + 
-								 " FROM Curso as curso" + 
-								 " WHERE nome=:nome " );
-		q.setParameter("nome", nome);
+			Query q = em.createQuery("SELECT object(curso)" + " FROM Curso as curso" + " WHERE nome=:nome ");
+			q.setParameter("nome", nome);
 
-		curso = (Curso) q.getSingleResult();
-		}
-		catch (Exception nre){
+			curso = (Curso) q.getSingleResult();
+		} catch (Exception nre) {
 			curso = null;
-			
-		}
-		finally{
+
+		} finally {
 			em.close();
 			return curso;
 		}
+	}
+
+	@Override
+	public Curso buscarPorCpf(String cpf) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

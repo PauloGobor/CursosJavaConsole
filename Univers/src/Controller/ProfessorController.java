@@ -6,33 +6,29 @@ import DAO.ProfessorDAO;
 import Model.Professor;
 
 public class ProfessorController {
-	
+
 	private Professor professor;
 	ProfessorDAO professorDAO = new ProfessorDAO();
-	
 
-	
 	public void salvar(Professor professor) {
 		professorDAO = new ProfessorDAO();
 		professorDAO.salvar(professor);
 		professor = new Professor();
-		//return "sucesso";
+		// return "sucesso";
 	}
-	
-	public List<Professor> listarProfessor()	{		
-		return professorDAO.listarProfessores();
+
+	public List<Professor> listarProfessor() {
+		return professorDAO.listar();
 	}
-	
+
 	public Professor BuscarProfessorPorId(Long cod) {
 		professorDAO = new ProfessorDAO();
-		professor = professorDAO.buscarProfessorPorId(cod);
+		professor = professorDAO.buscarPorId(cod);
 		return professor;
 	}
-	
+
 	public Professor BuscarProfessorPorCpf(String cpf) {
-		return professorDAO.buscarProfessorPorCpf(cpf);
+		return professorDAO.buscarPorCpf(cpf);
 	}
-	
-	
 
 }

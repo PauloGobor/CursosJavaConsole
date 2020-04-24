@@ -4,10 +4,10 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import Interfaces.ProfessorInterface;
+import Interfaces.IDAO;
 import Model.Professor;
 
-public class ProfessorDAO extends GenericDAO implements ProfessorInterface {
+public class ProfessorDAO extends GenericDAO implements IDAO<Professor> {
 
 	Professor professor = new Professor();
 
@@ -33,7 +33,7 @@ public class ProfessorDAO extends GenericDAO implements ProfessorInterface {
 	}
 
 	@Override
-	public List<Professor> listarProfessores() {
+	public List<Professor> listar() {
 		EntityManager em = getEntityManager();
 		Query q;
 
@@ -43,21 +43,19 @@ public class ProfessorDAO extends GenericDAO implements ProfessorInterface {
 	}
 
 	@Override
-	public Professor buscarProfessorPorId(Long cod) {
-		 if (cod != null) {
-		      professor = getEntityManager().find(Professor.class, cod);
-		    }		    
-		    return professor;
+	public Professor buscarPorId(Long cod) {
+		if (cod != null) {
+			professor = getEntityManager().find(Professor.class, cod);
+		}
+		return professor;
 	}
 
 	@SuppressWarnings("finally")
 	@Override
-	public Professor buscarProfessorPorCpf(String cpf) {
+	public Professor buscarPorCpf(String cpf) {
 		EntityManager em = getEntityManager();
 		try {
-			Query q = em.createQuery("SELECT object(professor)"     +
-		                             " FROM Professor as professor" + 
-					                 " WHERE cpf=:cpf ");
+			Query q = em.createQuery("SELECT object(professor)" + " FROM Professor as professor" + " WHERE cpf=:cpf ");
 			q.setParameter("cpf", cpf);
 
 			professor = (Professor) q.getSingleResult();
@@ -68,6 +66,24 @@ public class ProfessorDAO extends GenericDAO implements ProfessorInterface {
 			em.close();
 			return professor;
 		}
+	}
+
+	@Override
+	public Professor buscarPorNome(String nome) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Professor alterar(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void excluir(Long id) {
+		// TODO Auto-generated method stub
+
 	}
 
 }

@@ -5,10 +5,8 @@ import java.util.List;
 import DAO.CursoDAO;
 import Model.Curso;
 
-
-
 public class CursoController {
-	
+
 	private Curso curso;
 	CursoDAO CursoDAO = new CursoDAO();
 
@@ -23,11 +21,12 @@ public class CursoController {
 	public void setCurso(Curso curso) {
 		this.curso = curso;
 	}
+
 	public void salvar() {
 		CursoDAO cursoDAO = new CursoDAO();
 		cursoDAO.salvar(curso);
 		curso = new Curso();
-		//return "sucesso";
+		// return "sucesso";
 	}
 
 	public String alterar(Long cod) {
@@ -35,28 +34,26 @@ public class CursoController {
 		curso = cursoDAO.alterar(cod);
 		return "sucesso";
 	}
-	
-	public List<Curso> listarCurso()	{		
-		return CursoDAO.listarCursos();
+
+	public List<Curso> listarCurso() {
+		return CursoDAO.listar();
 	}
-	
-	
-	public String excluir(Long cod)	{
+
+	public String excluir(Long cod) {
 		CursoDAO cursoDAO = new CursoDAO();
 		cursoDAO.excluir(cod);
 		curso = new Curso();
 		return "sucesso";
 	}
-	
+
 	public Curso buscarCursoPorId(Long cod) {
 		CursoDAO cursoDAO = new CursoDAO();
-		curso = cursoDAO.buscarCursoPorId(cod);
+		curso = cursoDAO.buscarPorId(cod);
 		return curso;
 	}
-	
+
 	public Curso BuscarCursoPorNome(String nome) {
-		return CursoDAO.buscarCursoPorNome(nome);
+		return CursoDAO.buscarPorNome(nome);
 	}
-	
 
 }

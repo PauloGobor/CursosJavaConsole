@@ -6,6 +6,7 @@ import Model.Matricula;
 
 
 public interface MatriculaInterface {
+	
 	public void salvar(Matricula matricula);
 
 	public List<Matricula> listarMatriculas();

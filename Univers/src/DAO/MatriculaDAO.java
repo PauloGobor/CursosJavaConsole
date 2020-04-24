@@ -3,10 +3,12 @@ package DAO;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+
+import Interfaces.IDAO;
 import Interfaces.MatriculaInterface;
 import Model.Matricula;
 
-public class MatriculaDAO extends GenericDAO implements MatriculaInterface {
+public class MatriculaDAO extends GenericDAO implements IDAO<Matricula> {
 	Matricula matricula = new Matricula();
 
 	@Override
@@ -32,14 +34,14 @@ public class MatriculaDAO extends GenericDAO implements MatriculaInterface {
 	}
 
 	@Override
-	public List<Matricula> listarMatriculas() {
+	public List<Matricula> listar() {
 		EntityManager em = getEntityManager();
 		Query q = em.createQuery("SELECT object(matricula)" + " FROM Matricula as matricula");
 		List<Matricula> matriculas = q.getResultList();
 		return matriculas;
 	}
 
-	@Override
+
 	public List<Matricula> listarMatriculasPorCurso(Long cod, String status) {
 		final String verif = "TODOS";
 		EntityManager em = getEntityManager();
@@ -60,7 +62,6 @@ public class MatriculaDAO extends GenericDAO implements MatriculaInterface {
 	}
 
 	@SuppressWarnings("finally")
-	@Override
 	public Matricula validaUsuarioMatricula(Long usrcod, Long crscod) {
 		EntityManager em = getEntityManager();
 		try {
@@ -80,7 +81,7 @@ public class MatriculaDAO extends GenericDAO implements MatriculaInterface {
 	}
 
 	// mostrar para o aluno os cursos que ele esta matriculado
-	@Override
+	
 	public List<Matricula> listarMatriculasPorAluno(Long cod, String status) {
 		final String verif = "TODOS";
 		EntityManager em = getEntityManager();
@@ -100,5 +101,35 @@ public class MatriculaDAO extends GenericDAO implements MatriculaInterface {
 			return matriculas;
 		}
 
+	}
+
+	@Override
+	public Matricula buscarPorId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Matricula buscarPorNome(String nome) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Matricula alterar(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void excluir(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Matricula buscarPorCpf(String cpf) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
