@@ -30,7 +30,7 @@ public class ListarUsuario {
 
 		}
 		System.out.print("########################################################### \n\n");
-		Console.readString("Pressione qualquer botao para voltar");
+		Console.readString("Pressione ENTER para continuar...");
 
 	}
 

@@ -56,14 +56,14 @@ public class ListarMatriculasPorAluno {
 					System.out.println(matricula.getStatus());
 				}
 				System.out.print("###########################################################\n\n");
-				Console.readString("\nPressione qualquer botao para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			} else {
 				System.out.println("Opção de Status Invalida");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			}
 		} else {
 			System.out.println("Aluno não cadastrado");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 		}
 	}
 

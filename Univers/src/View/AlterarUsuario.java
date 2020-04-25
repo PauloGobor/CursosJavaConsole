@@ -11,7 +11,6 @@ public class AlterarUsuario {
 	public static void renderizar() {
 		newuser = new Usuario();
 		usrct = new UsuarioController();
-		
 
 		System.out.println("###########################################################");
 		System.out.println("###########################################################");
@@ -33,14 +32,12 @@ public class AlterarUsuario {
 			newuser.setSexo(Console.readString("Sexo: "));
 
 			usrct.salvar(newuser);
-			
+
 			System.out.println("Usuario " + newuser.getNome() + " alterado com Sucesso!!!");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 		} else {
 			System.out.println("Usuario não encontrado no sistema");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 		}
 	}
 }
-
-

@@ -52,26 +52,26 @@ public class RealizarMatricula {
 							mtrct.salvar(matricula);
 							System.out.println("A matricula do Aluno:" + usuario.getNome() + ", no Curso:"
 									+ curso.getNome() + " foi realizada com Sucesso");
-							Console.readString("Pressione qualquer botão para continuar...");
+							Console.readString("Pressione ENTER para continuar...");
 						} else {
 							System.out.println("Operação cancelada pelo usuario.");
-							Console.readString("Pressione qualquer botão para continuar...");
+							Console.readString("Pressione ENTER para continuar...");
 						}
 					} else {
 						System.out.println("Não tem mais vagas para o curso:" + curso.getNome());
-						Console.readString("Pressione qualquer botão para continuar...");
+						Console.readString("Pressione ENTER para continuar...");
 					}
 				} else {
 					System.out.println("Aluno ja matriculado neste curso");
-					Console.readString("Pressione qualquer botão para continuar...");
+					Console.readString("Pressione ENTER para continuar...");
 				}
 			} else {
 				System.out.println("Curso não cadastrado");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			}
 		} else {
 			System.out.println("Aluno não cadastrado");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 		}
 
 	}

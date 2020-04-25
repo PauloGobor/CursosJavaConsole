@@ -12,7 +12,8 @@ public class MenuUsuario {
 			System.out.println("###########################################################");
 			System.out.println("#################      MENU USUARIO      ##################");
 			System.out.println("###########################################################");
-			System.out.println("###########################################################");
+			System.out.println("###########################################################\n");
+			System.out.println("Escolha um opção!!!");
 			System.out.println("1 - Cadastrar Usuario");
 			System.out.println("2 - Listar Usuario");
 			System.out.println("3 - Alterar Usuario");

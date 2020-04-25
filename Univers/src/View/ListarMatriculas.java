@@ -12,7 +12,6 @@ public class ListarMatriculas {
 
 		mtctr = new MatriculaController();
 
-
 		System.out.println("###########################################################");
 		System.out.println("###########################################################");
 		System.out.println("#################     LISTAR MATRÍCULA     ################");
@@ -20,7 +19,6 @@ public class ListarMatriculas {
 		System.out.println("###########################################################\n");
 
 		List<Matricula> matriculas = mtctr.listarMatriculas();
-
 
 		System.out.print("# Usuario # Curso # Status\n");
 		System.out.print("###########################################################\n");
@@ -31,7 +29,6 @@ public class ListarMatriculas {
 
 		}
 		System.out.print("###########################################################\n\n");
-
-		Console.readString("\nPressione qualquer tecla ");
+		Console.readString("Pressione ENTER para continuar...");
 	}
 }

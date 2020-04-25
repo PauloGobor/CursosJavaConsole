@@ -11,6 +11,7 @@ public class CadastrarCurso {
 	public static Professor professor = new Professor();
 	public static ProfessorController prfctrl = new ProfessorController();
 	public static CursoController crsct = new CursoController();
+
 	public static void renderizar() {
 
 		curso = new Curso();
@@ -38,10 +39,10 @@ public class CadastrarCurso {
 
 				crsct.salvar(curso);
 				System.out.println("Curso " + curso.getNome() + " Cadastrado com Sucesso!!!");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			} else {
 				System.out.println("Professor não encontrado");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			}
 
 		} else {

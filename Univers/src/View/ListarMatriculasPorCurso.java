@@ -54,15 +54,14 @@ public class ListarMatriculasPorCurso {
 					System.out.println(matricula.getStatus());
 				}
 				System.out.print("###########################################################\n\n");
-
-				Console.readString("\nPressione qualquer botao para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			} else {
 				System.out.println("Opção Invalida para o Status da Matricula");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			}
 		} else {
 			System.out.println("Curso não cadastrado");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 		}
 	}
 }

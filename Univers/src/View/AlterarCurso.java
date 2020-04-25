@@ -28,7 +28,7 @@ public class AlterarCurso {
 		String nome = Console.readString("Informe o nome do Curso que deseja alterar: ").toUpperCase();
 		newcrs = crsct.BuscarCursoPorNome(nome);
 		if (newcrs != null) {
-			System.out.println("Preencher todos os campos com os dados do curso !");
+			System.out.println("Preencher todos os campos com os novos dados do curso !");
 			newcrs.setId(newcrs.getId());
 			String l_cpf = Console.readString("Infome o CPF do Professor: ");
 			professor = prfctrl.BuscarProfessorPorCpf(l_cpf);
@@ -42,14 +42,14 @@ public class AlterarCurso {
 
 				crsct.salvar(newcrs);
 				System.out.println("Curso" + newcrs.getNome() + " Alterado com Sucesso!");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			} else {
 				System.out.println("Professor não Cadastrado");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			}
 		} else {
 			System.out.println("Curso não Cadastrado");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 
 		}
 

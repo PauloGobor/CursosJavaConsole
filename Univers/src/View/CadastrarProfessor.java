@@ -29,14 +29,14 @@ public class CadastrarProfessor {
 				prf.setSexo(Console.readString("Sexo: "));
 				prfctr.salvar(prf);
 				System.out.println("Professor Cadastrado com Sucesso!");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			} else {
 				System.out.println("Professor ja tem cadastro no sistema! ! !");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			}
 		} else {
 			System.out.println("CPF Inválido! ! !");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 
 		}
 	}

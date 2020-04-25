@@ -74,30 +74,30 @@ public class AlterarStatusMatricula {
 								System.out.println("A matricula do Aluno: " + usuario.getNome().toUpperCase()
 										+ ", no Curso: " + curso.getNome() + " foi mudada do status:" + oldStatus
 										+ " para :" + matricula.getStatus());
-								Console.readString("Pressione qualquer botão para continuar...");
+								Console.readString("Pressione ENTER para continuar...");
 							} else {
 								System.out.println("O status da matricula do aluno não foi alterada");
-								Console.readString("Pressione qualquer botão para continuar...");
+								Console.readString("Pressione ENTER para continuar...");
 							}
 						} else {
 							System.out.println("Aluno não matriculado neste curso");
-							Console.readString("Pressione qualquer botão para continuar...");
+							Console.readString("Pressione ENTER para continuar...");
 						}
 					} else {
 						System.out.println("Aluno não cadastrado");
-						Console.readString("Pressione qualquer botão para continuar...");
+						Console.readString("Pressione ENTER para continuar...");
 					}
 				} else {
 					System.out.println("Curso não cadastrado");
-					Console.readString("Pressione qualquer botão para continuar...");
+					Console.readString("Pressione ENTER para continuar...");
 				}
 			} else {
 				System.out.println("Status da Matricula devem ser feita pelo proprio professor do curso ");
-				Console.readString("Pressione qualquer botão para continuar...");
+				Console.readString("Pressione ENTER para continuar...");
 			}
 		} else {
 			System.out.println("Professor não cadastrado");
-			Console.readString("Pressione qualquer botão para continuar...");
+			Console.readString("Pressione ENTER para continuar...");
 		}
 	}
 

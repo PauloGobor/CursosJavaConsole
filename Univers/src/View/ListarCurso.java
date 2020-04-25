@@ -31,8 +31,8 @@ public class ListarCurso {
 			System.out.println("R$: " + curso.getValor());
 
 		}
-
-		Console.readString("Pressione qualquer botao para voltar");
+		System.out.print("###########################################################\n\n");
+		Console.readString("Pressione ENTER para continuar...");
 	}
 
 }
