@@ -103,31 +103,26 @@ public class MatriculaDAO extends GenericDAO implements IDAO<Matricula> {
 
 	@Override
 	public Matricula buscarPorId(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public Matricula buscarPorNome(String nome) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public Matricula alterar(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public void excluir(Long id) {
-		// TODO Auto-generated method stub
-		
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public Matricula buscarPorCpf(String cpf) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 }

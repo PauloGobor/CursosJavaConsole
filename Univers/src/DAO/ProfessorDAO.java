@@ -70,20 +70,17 @@ public class ProfessorDAO extends GenericDAO implements IDAO<Professor> {
 
 	@Override
 	public Professor buscarPorNome(String nome) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public Professor alterar(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 
 	@Override
 	public void excluir(Long id) {
-		// TODO Auto-generated method stub
-
+		throw new UnsupportedOperationException();
 	}
 
 }

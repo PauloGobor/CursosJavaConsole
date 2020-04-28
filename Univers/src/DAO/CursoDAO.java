@@ -90,8 +90,7 @@ public class CursoDAO extends GenericDAO implements IDAO<Curso> {
 
 	@Override
 	public Curso buscarPorCpf(String cpf) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 
 }

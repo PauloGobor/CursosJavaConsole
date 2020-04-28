@@ -93,8 +93,7 @@ public class UsuarioDAO extends GenericDAO implements IDAO<Usuario> {
 
 	@Override
 	public Usuario buscarPorNome(String nome) {
-		// TODO Auto-generated method stub
-		return null;
+		throw new UnsupportedOperationException();
 	}
 
 }
