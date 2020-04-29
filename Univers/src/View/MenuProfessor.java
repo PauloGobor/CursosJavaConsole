@@ -12,7 +12,6 @@ public class MenuProfessor {
 			System.out.println("################      MENU PROFESSOR      #################");
 			System.out.println("###########################################################");
 			System.out.println("###########################################################\n");
-			System.out.println("Escolha um opção!!!");
 			System.out.println("1 - Cadastrar Professor");
 			System.out.println("2 - Listar Professores");
 			System.out.println("3 - Alterar Status Matricula\n");//professor deve ser o mesmo do curso

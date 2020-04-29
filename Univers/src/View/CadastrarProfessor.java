@@ -17,7 +17,7 @@ public class CadastrarProfessor {
 		System.out.println("###########################################################");
 		System.out.println("###############     CADASTRAR  PROFESSOR     ##############");
 		System.out.println("###########################################################");
-		System.out.println("###########################################################");
+		System.out.println("###########################################################\n");
 
 		System.out.println("Infome os dados de Cadastro do Professor\n");
 		prf.setCpf(Console.readString("CPF: "));

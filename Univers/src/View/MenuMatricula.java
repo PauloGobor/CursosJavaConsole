@@ -12,7 +12,6 @@ public class MenuMatricula {
 			System.out.println("#################      MENU MATRÍCULA     #################");
 			System.out.println("###########################################################");
 			System.out.println("###########################################################\n");
-			System.out.println("Escolha um opção!!!");
 			System.out.println("1 - Realizar MatrÍcula");
 			System.out.println("2 - Listar Matriculas");
 			System.out.println("3 - Listar Matriculas por Curso");

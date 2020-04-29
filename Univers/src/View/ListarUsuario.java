@@ -21,12 +21,13 @@ public class ListarUsuario {
 		System.out.println("###########################################################");
 		System.out.println("###########################################################\n");
 
-		System.out.print("# Nome # Idade # Email #\n");
+		System.out.print("# Nome # Idade # Email # Telefone #\n");
 		System.out.print("########################################################### \n");
 		for (Usuario usuario : usuarios) {
 			System.out.print(usuario.getNome() + " # ");
 			System.out.print(usuario.getIdade() + " # ");
-			System.out.println(usuario.getEmail() + " # ");
+			System.out.print(usuario.getEmail() + " # ");
+			System.out.println(usuario.getTelefone() + " # ");
 
 		}
 		System.out.print("########################################################### \n\n");

@@ -12,7 +12,6 @@ public class MenuCurso {
 			System.out.println("#################       MENU CURSO       ##################");
 			System.out.println("###########################################################");
 			System.out.println("###########################################################\n");
-			System.out.println("Escolha um opção!!!");
 			System.out.println("1 - Cadastrar Curso");
 			System.out.println("2 - Listar Curso");
 			System.out.println("3 - Alterar Curso");

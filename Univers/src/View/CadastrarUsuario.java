@@ -29,6 +29,7 @@ public class CadastrarUsuario {
 				user.setEmail(Console.readString("Email: "));
 				user.setSexo(Console.readString("Sexo: "));
 				user.setIdade(Console.readInt("Idade: "));
+				user.setTelefone(Console.readString("Telefone: "));
 				// registra o Ususario
 				usrct.salvar(user);
 				System.out.println("Usuario Cadastrado com Sucesso!");

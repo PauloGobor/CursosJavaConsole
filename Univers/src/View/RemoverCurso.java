@@ -14,7 +14,7 @@ public class RemoverCurso {
 		System.out.println("###########################################################");
 		System.out.println("#################      REMOVER CURSO      #################");
 		System.out.println("###########################################################");
-		System.out.println("###########################################################");
+		System.out.println("###########################################################\n");
 
 		String nome = Console.readString("Informe o Nome do Curso");
 		curso = crsct.BuscarCursoPorNome(nome);

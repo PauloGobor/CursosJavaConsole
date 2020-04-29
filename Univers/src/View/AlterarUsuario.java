@@ -16,7 +16,7 @@ public class AlterarUsuario {
 		System.out.println("###########################################################");
 		System.out.println("#################     ALTERAR USUARIO     #################");
 		System.out.println("###########################################################");
-		System.out.println("###########################################################");
+		System.out.println("###########################################################\n");
 
 		// mudar para buscar por cpf
 
@@ -30,6 +30,7 @@ public class AlterarUsuario {
 			newuser.setEmail(Console.readString("Email: "));
 			newuser.setIdade(Console.readInt("Idade: "));
 			newuser.setSexo(Console.readString("Sexo: "));
+			newuser.setTelefone(Console.readString("Telefone: "));
 
 			usrct.salvar(newuser);
 

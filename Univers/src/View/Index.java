@@ -13,7 +13,6 @@ public class Index {
 			System.out.println("#################       CURSOS ONLINE        ##############");
 			System.out.println("###########################################################");
 			System.out.println("###########################################################\n");
-			System.out.println("Escolha um opção!!!");
 			System.out.println("1 - Menu Usuario");
 			System.out.println("2 - Menu Curso");
 			System.out.println("3 - Menu Professor");

@@ -15,7 +15,7 @@ public class RemoverUsuario {
 		System.out.println("###########################################################");
 		System.out.println("################       REMOVER USUARIO     ################");
 		System.out.println("###########################################################");
-		System.out.println("###########################################################");
+		System.out.println("###########################################################\n");
 
 		String cpf = Console.readString("Infome o CPF do Usuario");
 		usuario = usrct.BuscarUsarioPorCpf(cpf);
